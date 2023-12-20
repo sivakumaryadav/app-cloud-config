@@ -4,4 +4,4 @@ spring:
 
 cloud:
   config: 
-    name: message from cloud-config-server-app 
+    name: updated message from cloud-config-server-app of local property file
