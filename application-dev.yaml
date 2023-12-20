@@ -1,6 +1,7 @@
 spring:
   application:
     name: app-cloud-config
+
 cloud:
   config: 
-    name: message from cloud-config-server-app 
+    name: updated message from cloud-config-server-app 
