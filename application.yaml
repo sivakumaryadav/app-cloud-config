@@ -1,7 +1,23 @@
 spring:
   application:
     name: cloud-config-server
-
+  datasource:
+    url: jdbc:h2:mem:mydb
+    username: sa
+    password: 
+    driverClassName: org.h2.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update #create-drop
+    database-platform: org.hibernate.dialect.H2Dialect
+    defer-datasource-initialization: true
+  h2:
+    console:
+      enabled: true
+      path: /h2-console # http://localhost:8011/h2-console
+      settings:
+        trace: false
+        web-allow-others: false
 cloud:
   config: 
     name: updated message from cloud-config-server-app of local property file.
